@@ -148,7 +148,7 @@
 					gl.disable(gl.SCISSOR_TEST);
 				}
 
-				else
+				else if(cfg.primitive == 1)
 				{
 				    var translationMatrix = new THREE.Matrix4().makeTranslation(l.pos[0], l.pos[1], l.pos[2]);
 				    var scaleMatrix = new THREE.Matrix4().makeScale(l.rad, l.rad, l.rad);
